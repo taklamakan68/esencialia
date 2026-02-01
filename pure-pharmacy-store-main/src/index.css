@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pharmaceutical E-commerce Design System
+   Clean, aseptic, clinical aesthetic
+   All colors in HSL format
+*/
+
+@layer base {
+  :root {
+    /* Core pharmaceutical palette */
+    --background: 140 25% 98%;
+    --foreground: 160 25% 15%;
+
+    /* Clinical white surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 160 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 25% 15%;
+
+    /* Primary: Pharmaceutical green */
+    --primary: 152 50% 92%;
+    --primary-foreground: 152 55% 35%;
+    
+    /* Primary accent for buttons and CTAs */
+    --primary-accent: 152 55% 45%;
+    --primary-accent-foreground: 0 0% 100%;
+
+    /* Secondary: Soft clinical gray-green */
+    --secondary: 145 30% 94%;
+    --secondary-foreground: 160 25% 25%;
+
+    /* Muted: Sterile green-gray tones */
+    --muted: 140 20% 96%;
+    --muted-foreground: 160 15% 45%;
+
+    /* Accent: Light pharmaceutical green */
+    --accent: 152 55% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Clinical trust green */
+    --success: 152 55% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders: Subtle clinical lines */
+    --border: 145 25% 88%;
+    --input: 145 25% 88%;
+    --ring: 152 55% 45%;
+
+    --radius: 0.75rem;
+
+    /* Shadows */
+    --shadow-clinical: 0 2px 8px -2px hsl(145 25% 80% / 0.3);
+    --shadow-hover: 0 4px 16px -4px hsl(152 55% 70% / 0.25);
+    --shadow-card: 0 1px 3px hsl(145 25% 80% / 0.2);
+
+    /* Sidebar (keeping defaults) */
+    --sidebar-background: 140 25% 97%;
+    --sidebar-foreground: 160 25% 25%;
+    --sidebar-primary: 152 55% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 152 50% 92%;
+    --sidebar-accent-foreground: 152 55% 35%;
+    --sidebar-border: 145 25% 88%;
+    --sidebar-ring: 152 55% 45%;
+  }
+
+  .dark {
+    --background: 160 25% 8%;
+    --foreground: 140 20% 95%;
+
+    --card: 160 20% 12%;
+    --card-foreground: 140 20% 95%;
+
+    --popover: 160 20% 12%;
+    --popover-foreground: 140 20% 95%;
+
+    --primary: 152 40% 20%;
+    --primary-foreground: 152 55% 60%;
+    
+    --primary-accent: 152 55% 50%;
+    --primary-accent-foreground: 160 25% 8%;
+
+    --secondary: 160 20% 18%;
+    --secondary-foreground: 140 20% 95%;
+
+    --muted: 160 20% 18%;
+    --muted-foreground: 140 15% 65%;
+
+    --accent: 152 55% 50%;
+    --accent-foreground: 160 25% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 160 20% 20%;
+    --input: 160 20% 20%;
+    --ring: 152 55% 50%;
+
+    --sidebar-background: 160 25% 8%;
+    --sidebar-foreground: 140 20% 95%;
+    --sidebar-primary: 152 55% 50%;
+    --sidebar-primary-foreground: 160 25% 8%;
+    --sidebar-accent: 152 40% 20%;
+    --sidebar-accent-foreground: 152 55% 60%;
+    --sidebar-border: 160 20% 20%;
+    --sidebar-ring: 152 55% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight text-foreground;
+  }
+}
+
+@layer components {
+  /* Clinical card hover effect */
+  .clinical-card {
+    @apply bg-card rounded-lg border border-border transition-all duration-300;
+    box-shadow: var(--shadow-card);
+  }
+
+  .clinical-card:hover {
+    @apply border-primary;
+    box-shadow: var(--shadow-hover);
+  }
+
+  /* Pharmaceutical button styles */
+  .btn-pharmaceutical {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-200;
+    @apply bg-primary-accent text-primary-accent-foreground;
+    @apply hover:opacity-90 active:scale-[0.98];
+  }
+
+  .btn-pharmaceutical-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-200;
+    @apply border-2 border-primary-accent text-primary-accent;
+    @apply hover:bg-primary hover:text-primary-foreground;
+  }
+
+  /* Trust badge styling */
+  .trust-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full;
+    @apply bg-accent text-accent-foreground text-sm font-medium;
+  }
+
+  /* Product grid */
+  .product-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+  }
+
+  /* Sterile section divider */
+  .section-divider {
+    @apply w-full h-px bg-gradient-to-r from-transparent via-border to-transparent;
+  }
+
+  /* Clinical input styling */
+  .clinical-input {
+    @apply w-full px-4 py-3 rounded-lg border border-border bg-background;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent;
+    @apply placeholder:text-muted-foreground transition-all duration-200;
+  }
+
+  /* Price styling */
+  .price-tag {
+    @apply text-2xl font-bold text-primary-accent;
+  }
+
+  /* Category pill */
+  .category-pill {
+    @apply px-4 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium;
+    @apply hover:bg-primary-accent hover:text-primary-accent-foreground transition-all duration-200 cursor-pointer;
+  }
+}
+
+@layer utilities {
+  /* Pharmaceutical green gradient */
+  .gradient-pharmaceutical {
+    background: linear-gradient(135deg, hsl(152 50% 92%) 0%, hsl(145 30% 94%) 100%);
+  }
+
+  /* Hero gradient overlay */
+  .gradient-hero {
+    background: linear-gradient(180deg, hsl(0 0% 100% / 0.9) 0%, hsl(0 0% 100% / 0.7) 50%, hsl(0 0% 100% / 0.95) 100%);
+  }
+
+  /* Subtle animation */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
