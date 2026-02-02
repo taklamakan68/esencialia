@@ -52,7 +52,7 @@ const Header = () => {
         className="w-10 h-10 object-contain"
       />
 
-      <div className="hidden sm:block">
+      <div className="block">
         <h1 className="text-green-600 text-xl font-bold">
           Esencialia
         </h1>
@@ -154,17 +154,17 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/catalog?category=Colageno" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-muted-foreground">
-                  Articular
+                  Articulaciones y Colágeno
                 </Link>
               </li>
               <li>
                 <Link to="/catalog?category=Defensas" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-muted-foreground">
-                  Bienestar
+                  Defensas e Inmunidad
                 </Link>
               </li>
               <li>
                 <Link to="/catalog?category=Digestion" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-muted-foreground">
-                  Control de Peso
+                  Digestión y Detox
                 </Link>
               </li>
             </ul>

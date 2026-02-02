@@ -60,10 +60,10 @@ const Footer = () => {
 
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
               <span className="flex items-center gap-2">
-                <Phone className="w-4 h-4" /> 634 22 94 49
+                <Phone className="w-4 h-4" /> +34 634 22 94 49
               </span>
               <span className="flex items-center gap-2">
-                <Mail className="w-4 h-4" /> halcyonglobalretail@gmail.com
+                <Mail className="w-4 h-4" /> parafarmacia.esencialia@gmail.com
               </span>
               <span className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" /> Córdoba, España

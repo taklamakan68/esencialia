@@ -27,7 +27,7 @@ const PoliticaEnvios = () => {
                 <div>
                   <h3 className="text-2xl font-medium mb-4">Plazos de Entrega</h3>
                   <p className="text-gray-700 mb-4">
-                    En <strong>Halcyon Pharma</strong> nos comprometemos a procesar todos los pedidos en un plazo de <strong>24-48 horas hábiles</strong> desde la confirmación del pago. Los envíos se realizan a través de servicios de mensajería especializada para garantizar la integridad de nuestros productos.
+                    En <strong>Esencialia</strong> nos comprometemos a procesar todos los pedidos en un plazo de <strong>24-48 horas hábiles</strong> desde la confirmación del pago. Los envíos se realizan a través de servicios de mensajería especializada para garantizar la integridad de nuestros productos.
                   </p>
                   
                   <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500 my-6">
@@ -190,7 +190,7 @@ const PoliticaEnvios = () => {
                   <ol className="space-y-3 text-blue-700">
                     <li className="flex items-start">
                       <span className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">1</span>
-                      <span><strong>Notifica inmediatamente</strong> por email a incidencias@halcyonpharma.es</span>
+                      <span><strong>Notifica inmediatamente</strong> por email a parafarmacia.esencialia@gmail.com</span>
                     </li>
                     <li className="flex items-start">
                       <span className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">2</span>
@@ -284,11 +284,11 @@ const PoliticaEnvios = () => {
                   <div className="space-y-2 text-green-700">
                     <p className="flex items-center">
                       <span className="mr-2">📧</span>
-                      <span>envios@halcyonpharma.es</span>
+                      <span>parafarmacia.esencialia@gmail.com</span>
                     </p>
                     <p className="flex items-center">
                       <span className="mr-2">📞</span>
-                      <span>900 123 456 (L-V 9:00-18:00)</span>
+                      <span>634 22 94 49 (L-V 9:00-21:00)</span>
                     </p>
                   </div>
                 </div>
@@ -298,11 +298,11 @@ const PoliticaEnvios = () => {
                   <div className="space-y-2 text-green-700">
                     <p className="flex items-center">
                       <span className="mr-2">📧</span>
-                      <span>calidad@halcyonpharma.es</span>
+                      <span>parafarmacia.esencialia@gmail.com</span>
                     </p>
                     <p className="flex items-center">
                       <span className="mr-2">📞</span>
-                      <span>900 789 012 (L-V 9:00-14:00)</span>
+                      <span>634 22 94 49 (L-V 9:00-21:00)</span>
                     </p>
                   </div>
                 </div>
@@ -310,7 +310,7 @@ const PoliticaEnvios = () => {
 
               <div className="mt-8 pt-6 border-t border-gray-300">
                 <p className="text-sm text-gray-600">
-                  <strong>Halcyon Pharma se reserva el derecho a modificar la presente política para adaptarse a cambios legislativos. Fecha última actualización: {new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</strong>
+                  <strong>Esencialia se reserva el derecho a modificar la presente política para adaptarse a cambios legislativos. Fecha última actualización: {new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</strong>
                 </p>
                 
                 <p className="mt-6 text-center italic text-green-600 font-medium">

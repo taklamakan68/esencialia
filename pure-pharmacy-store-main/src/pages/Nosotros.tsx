@@ -14,21 +14,19 @@ const Nosotros = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-5xl font-bold mb-6 text-gray-900">
-                Conoce <span className="text-green-600">Halcyon Global</span>
+                Conoce <span className="text-green-600">Esencialia</span>
               </h1>
               <p className="text-xl text-gray-700 mb-8">
                 Dedicados a tu bienestar. Comprometidos con la excelencia.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <span className="px-4 py-2 bg-green-600 text-white rounded-full text-sm">
-                  Fundada en 2010
+                  Fundada en 2024
                 </span>
                 <span className="px-4 py-2 bg-green-600 text-white rounded-full text-sm">
                   Productos 100% Naturales
                 </span>
-                <span className="px-4 py-2 bg-green-600 text-white rounded-full text-sm">
-                  Certificación ISO 22000
-                </span>
+                
               </div>
             </div>
           </div>
@@ -48,7 +46,7 @@ const Nosotros = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 mb-8">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  <strong className="text-green-700">Halcyon Global</strong> surge del firme propósito de un equipo multidisciplinar que decidió volcar su saber y dedicación en el ámbito de la salud y el bienestar. Nuestra convicción es absoluta: "Creemos en lo que promovemos y en lo que elaboramos. No son meras afirmaciones, sino conclusiones basadas en evidencia científica, y la ciencia es infalible".
+                  <strong className="text-green-700">Esencialia</strong> surge del firme propósito de un equipo multidisciplinar que decidió volcar su saber y dedicación en el ámbito de la salud y el bienestar. Nuestra convicción es absoluta: "Creemos en lo que promovemos y en lo que elaboramos. No son meras afirmaciones, sino conclusiones basadas en evidencia científica, y la ciencia es infalible".
                 </p>
                 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -100,7 +98,7 @@ const Nosotros = () => {
                   </blockquote>
                   
                   <p className="text-gray-700">
-                    <strong>Halcyon Global</strong> se fundó con la visión de promover hábitos de vida saludables mediante una nutrición balanceada y una suplementación consciente.
+                    <strong>Esencialia</strong> se fundó con la visión de promover hábitos de vida saludables mediante una nutrición balanceada y una suplementación consciente.
                   </p>
                   
                   <p className="text-gray-700">
@@ -126,7 +124,7 @@ const Nosotros = () => {
                 
                 <div className="space-y-4">
                   <p className="text-gray-700">
-                    Para trazar nuestro camino hacia adelante, reconocemos la importancia de nuestras raíces. Ciertas cualidades definitorias de <strong>Halcyon Global</strong> son inherentemente proyectivas.
+                    Para trazar nuestro camino hacia adelante, reconocemos la importancia de nuestras raíces. Ciertas cualidades definitorias de <strong>Esencialia</strong> son inherentemente proyectivas.
                   </p>
                   
                   <div className="space-y-6">
@@ -140,7 +138,7 @@ const Nosotros = () => {
                     <div>
                       <h4 className="font-semibold text-lg mb-2 text-emerald-700">Sintonía con el Usuario</h4>
                       <p className="text-gray-600">
-                        Las necesidades sociales evolucionan. Halcyon Global evoluciona con ellas, ofreciendo soluciones pertinentes, siempre guiadas por el rigor técnico.
+                        Las necesidades sociales evolucionan. Esencialia evoluciona con ellas, ofreciendo soluciones pertinentes, siempre guiadas por el rigor técnico.
                       </p>
                     </div>
                     
@@ -261,7 +259,7 @@ const Nosotros = () => {
                   </p>
                   
                   <p className="text-gray-700">
-                    La ecoconciencia es el modo en que <strong>Halcyon Global</strong> ejerce el cuidado del medio ambiente y se manifiesta en cada operación y determinación corporativa.
+                    La ecoconciencia es el modo en que <strong>Esencialia</strong> ejerce el cuidado del medio ambiente y se manifiesta en cada operación y determinación corporativa.
                   </p>
                   
                   <div className="mt-4 p-4 bg-emerald-50 rounded-lg">
@@ -297,7 +295,7 @@ const Nosotros = () => {
               Forma parte de nuestro círculo de bienestar
             </h2>
             <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-              Numerosas familias depositan su confianza en Halcyon Global para preservar su salud de manera natural y consciente.
+              Numerosas familias depositan su confianza en Esencialia para preservar su salud de manera natural y consciente.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 

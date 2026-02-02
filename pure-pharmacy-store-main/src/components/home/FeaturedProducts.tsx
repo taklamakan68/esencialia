@@ -7,13 +7,12 @@ const FeaturedProducts = () => {
   const featuredProducts = getFeaturedProducts();
 
   return (
-    <section className="py-16 bg-secondary">
-      <div className="container mx-auto px-4">
-        {/* HEMOS CAMBIADO ESTE DIV: quitamos el flex y añadimos text-center y relative */}
-        <div className="text-center mb-12 relative">
-          <h2 className="text-3xl font-bold text-foreground mb-2">
-            Nuestros Productos
-          </h2>
+    <section className="py-3 bg-secondary">  {/* Cambio: py-16 → py-8 (de 4rem a 2rem) */}
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-6 relative">  {/* Cambio: mb-12 → mb-6 (de 3rem a 1.5rem) */}
+      <h2 className="text-3xl font-bold text-foreground mb-2">
+        Nuestros Productos
+      </h2>
 
           {/* El enlace "Ver todos" ahora se posiciona de forma absoluta a la derecha en PC */}
           <Link
@@ -25,17 +24,17 @@ const FeaturedProducts = () => {
           </Link>
         </div>
 
-        <div className="product-grid">
-          {featuredProducts.map((product, index) => (
-            <div
-              key={product.id}
-              className="animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <ProductCard product={product} />
-            </div>
-          ))}
-        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+  {featuredProducts.map((product, index) => (
+    <div
+      key={product.id}
+      className="animate-fade-in"
+      style={{ animationDelay: `${index * 100}ms` }}
+    >
+      <ProductCard product={product} />
+    </div>
+  ))}
+</div>
 
         <div className="text-center mt-8 md:hidden">
           <Link to="/catalog" className="btn-pharmaceutical-outline">
