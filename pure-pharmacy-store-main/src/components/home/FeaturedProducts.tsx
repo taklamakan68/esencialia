@@ -10,9 +10,9 @@ const FeaturedProducts = () => {
     <section className="py-3 bg-secondary">  {/* Cambio: py-16 → py-8 (de 4rem a 2rem) */}
   <div className="container mx-auto px-4">
     <div className="text-center mb-6 relative">  {/* Cambio: mb-12 → mb-6 (de 3rem a 1.5rem) */}
-      <h2 className="text-3xl font-bold text-foreground mb-2">
-        Nuestros Productos
-      </h2>
+      <h2 className="text-xl md:text-3xl font-bold text-foreground mb-2">
+  Nuestros Productos
+</h2>
 
           {/* El enlace "Ver todos" ahora se posiciona de forma absoluta a la derecha en PC */}
           <Link
