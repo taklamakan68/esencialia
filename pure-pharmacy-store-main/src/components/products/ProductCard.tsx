@@ -31,14 +31,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
               -{Math.round((1 - product.price / product.originalPrice) * 100)}%
             </span>
           )}
-          {product.certifications.length > 0 && (
-            <div className="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 rounded-full bg-background/90 backdrop-blur-sm">
-              <Shield className="w-3 h-3 text-primary-accent" />
-              <span className="text-xs font-medium text-foreground">
-                {product.certifications[0]}
-              </span>
-            </div>
-          )}
         </div>
 
         {/* Content */}
