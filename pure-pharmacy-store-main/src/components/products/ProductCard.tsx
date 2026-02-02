@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Star, Plus, Shield } from "lucide-react";
+import { Star, Plus, Shield, ShoppingCart } from "lucide-react";
 import { Product } from "@/types/product";
 import { useCart } from "@/context/CartContext";
 
@@ -73,8 +73,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
           </div>
 
           {/* Price and CTA */}
-          <div className="flex items-center justify-between mt-auto pt-4">
-            <div>
+          <div className="mt-auto pt-4">
+            <div className="mb-3">
               <span className="price-tag">€{product.price.toFixed(2)}</span>
               {product.originalPrice && (
                 <span className="ml-2 text-sm text-muted-foreground line-through">
@@ -84,10 +84,19 @@ const ProductCard = ({ product }: ProductCardProps) => {
             </div>
             <button
               onClick={handleAddToCart}
-              className="w-10 h-10 rounded-lg bg-primary-accent text-primary-accent-foreground flex items-center justify-center hover:opacity-90 transition-opacity"
+              className="md:hidden w-full py-2 px-3 rounded-lg bg-primary-accent text-primary-accent-foreground flex items-center justify-center gap-2 hover:opacity-90 transition-opacity text-sm font-medium"
             >
-              <Plus className="w-5 h-5" />
+              
+              Comprar
             </button>
+            <div className="hidden md:flex justify-end">
+              <button
+                onClick={handleAddToCart}
+                className="w-10 h-10 rounded-lg bg-primary-accent text-primary-accent-foreground flex items-center justify-center hover:opacity-90 transition-opacity"
+              >
+                <Plus className="w-5 h-5" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
