@@ -65,15 +65,16 @@ const ProductDetail = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            {/* Certifications badges */}
-            <div className="flex flex-wrap gap-2">
-              {product.certifications.map((cert) => (
-                <span key={cert} className="trust-badge">
-                  <Shield className="w-3 h-3" />
-                  {cert}
-                </span>
-              ))}
-            </div>
+{/* Certifications badges - Comentado porque se eliminaron las certificaciones
+<div className="flex flex-wrap gap-2">
+  {product.certifications?.map((cert) => (
+    <span key={cert} className="trust-badge">
+      <Shield className="w-3 h-3" />
+      {cert}
+    </span>
+  ))}
+</div>
+*/}
           </div>
 
           {/* Product info - Prospectus style */}
