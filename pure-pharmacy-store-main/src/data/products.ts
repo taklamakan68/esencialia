@@ -35,7 +35,6 @@ export const products: Product[] = [
     rating: 4.8,
     reviewCount: 234,
     inStock: true,
-    certifications: ["GMP", "ISO 22000", "HACCP"]
   },
   {
     id: "2",
@@ -60,7 +59,6 @@ export const products: Product[] = [
     rating: 4.9,
     reviewCount: 456,
     inStock: true,
-    certifications: ["GMP", "Vegano", "Sin gluten"]
   }, 
   {
     id: "3",
@@ -91,7 +89,6 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 189,
     inStock: true,
-    certifications: ["GMP", "Tested for Sport", "Sin colorantes artificiales"]
   },
     {
   id: "4",
@@ -126,7 +123,6 @@ export const products: Product[] = [
   rating: 4.6,
   reviewCount: 312,
   inStock: true,
-  certifications: ["GMP", "Apto para deportistas"] // Asumo certificación común
 },
   {
 id: "5",
@@ -164,7 +160,6 @@ warnings: [
 rating: 4.8,
 reviewCount: 567,
 inStock: true,
-certifications: ["GMP"]
 },
   {
 id: "6",
@@ -201,7 +196,6 @@ warnings: [
 rating: 4.83,
 reviewCount: 12,
 inStock: true,
-certifications: ["GMP"]
 },
   {
 id: "7",
@@ -239,7 +233,6 @@ warnings: [
 rating: 4.4,
 reviewCount: 89,
 inStock: true,
-certifications: ["Producto Natural"]
 },
   {
 id: "8",
@@ -275,7 +268,6 @@ warnings: [
 rating: 4.6,
 reviewCount: 128,
 inStock: true,
-certifications: ["NSF International", "GMP"]
 }
 ];
 

@@ -16,7 +16,7 @@ export interface Product {
   rating: number;
   reviewCount: number;
   inStock: boolean;
-  certifications: string[];
+  certifications?: string[];
 }
 
 export interface CartItem {
